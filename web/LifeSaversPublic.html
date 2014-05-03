@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lifesavers-Public</title>
+</head>
+<body>
+<div id="ilu"></div>
+
+<DIV ID="newpost" DIR="LTR">
+	<H1>Register for Lifesavers</H1>
+	<P STYLE="margin-bottom: 0in">Personal details 
+	</P>
+	<FORM ACTION="Upload.aspx" METHOD="POST" ENCTYPE="multipart/form-data">
+		<P STYLE="margin-bottom: 0in"><A NAME="email"></A>Email of loved
+		ones <INPUT TYPE=TEXT NAME="email" id="email" SIZE=20 STYLE="width: 1.8in; height: 0.25in">
+				</P>
+		<P STYLE="margin-bottom: 0in"><A NAME="phone"></A>Telephone of
+		non-emergency # <INPUT TYPE=TEXT NAME="phone" SIZE=20 STYLE="width: 1.8in; height: 0.25in">
+				</P>
+		<DIV ID="demo" DIR="LTR">
+			<P STYLE="margin-bottom: 0in">Click to get your coordinates:
+			Provide Location</P>
+		</DIV>
+		<P STYLE="margin-bottom: 0in"><A NAME="url"></A>URL of floorpan/map
+		(or use file upload) <INPUT TYPE=TEXT NAME="url" SIZE=20 STYLE="width: 1.8in; height: 0.25in">
+				</P>
+		<P STYLE="margin-bottom: 0in"><A NAME="fileToUpload"></A>Select a
+		Map/Floorplan File to Upload<BR><INPUT TYPE=FILE NAME="fileToUpload" SIZE=18 STYLE="width: 1.8in; height: 0.25in" ONCHANGE="fileSelected();">
+				</P>
+		<DIV ID="fileName" DIR="LTR">
+			<P STYLE="margin-bottom: 0in"><BR>
+			</P>
+		</DIV>
+		<DIV ID="fileSize" DIR="LTR">
+			<P STYLE="margin-bottom: 0in"><BR>
+			</P>
+		</DIV>
+		<DIV ID="fileType" DIR="LTR">
+			<P STYLE="margin-bottom: 0in"><BR>
+			</P>
+		</DIV>
+		<P STYLE="margin-bottom: 0in"><INPUT TYPE=BUTTON VALUE="Upload" STYLE="width: 0.57in; height: 0.28in" ONCLICK="uploadFile()">
+				</P>
+		<DIV ID="progressNumber" DIR="LTR">
+			<P STYLE="margin-bottom: 0in"><BR>
+			</P>
+		</DIV>
+	</DIV>
+	<P><INPUT TYPE=BUTTON VALUE="Submit setup" STYLE="width: 0.89in; height: 0.28in" ONCLICK="showhide()">
+		</P>
+</FORM>
+<img src="ConsumerLifeSaverPkg.png" width="450" height="750" alt="Lifesavers-Public" usemap="#Lifesavers-Public">
+
+<map name="Lifesavers-Public">
+<!-- Left side -->
+  <area shape="rect" coords="18,21,194,178" alt="Call 911" href="aim:goIM?screenname=ATTRelay&message=Call+911">
+  <area shape="rect" coords="11,198,202,360" alt="Text 911" href="http://www.cnbc.com">
+  <area shape="rect" coords="16,372,194,525" alt="Send Beacon" href="http://www.google.com">
+  <area shape="rect" coords="14,537,197,683" alt="Stream to 911" href="http://www.yahoo.com">
+<!-- Right side -->
+  <area shape="rect" coords="214,22,433,182" alt="I love you" href="#ilu" onclick="window.location.href = 'mailto:'+ document.getElementById('email').value;">
+  <area shape="rect" coords="211,198,430,362" alt="Maps" href="http://www.hulu.com">
+  <area shape="rect" coords="209,374,432,530" alt="Floor Plans" href="http://www.spiritcruises.com/washington-dc/about/experience/floor-plans">
+  <area shape="rect" coords="206,541,430,680" alt="Life Savers" href="tips.html">
+  
+<!-- Bottom  -->
+  <area shape="rect" coords="14,696,435,742" alt="Non Emergency" href="http://www.bing.com">
+</map>
+
+</body>
+</html>
